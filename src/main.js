@@ -181,7 +181,7 @@ checkPasswordStr = (password) => {
 
 let timeout;
 
-if (window.location.pathname === "/dist/register.html") {
+if (window.location.pathname === "/register.html") {
   password.addEventListener("input", () => {
     clearTimeout(timeout);
     timeout = setTimeout(checkPasswordStr(password.value), 500);
