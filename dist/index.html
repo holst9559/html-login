@@ -7,33 +7,59 @@
     <title>Html login</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="bg-gray-900">
+  <body>
     <div
-      class="container-xl w-2/5 h-fit min-w-40 bg-slate-100 rounded-xl pb-4 ml-auto mr-auto mt-40 block">
-      <h1 class="font-bold text-5xl pb-10 ml-40 mt-2">Login</h1>
-      <form>
-        <section>
-          <label for="email">Email</label>
-          <input
-            id="email"
-            type="email"
-            class="bg-slate-200 border border-gray-600 opacity-50 rounded-xl" />
-        </section>
+      class="min-h-screen py-40"
+      style="background-image: linear-gradient(115deg, #306a79, #dad8d5)">
+      <div class="container mx-auto h-40">
+        <div
+          class="w-5/12 bg-white rounded-xl shadow-lg overflow-hidden mr-auto ml-auto">
+          <div id="form-container" class="w-full py-10 px-12">
+            <h2 class="text-5xl mb-10 text-center">Login</h2>
+            <p id="error"></p>
+            <form id="login" action="#" novalidate>
+              <div class="input-control mt-5">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="text"
+                  class="border border-gray-400 py-1 px-2 w-full rounded-2xl"
+                  required />
+                <div class="error text-red-600 font-semibold ml-1"></div>
+              </div>
 
-        <section class="m-2">
-          <label for="password">Password</label>
-          <input
-            id="password"
-            type="password"
-            class="bg-slate-200 border border-gray-600 opacity-50 rounded-xl" />
-        </section>
+              <div class="input-control mt-5">
+                <label for="password">Password</label>
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  class="border border-gray-400 py-1 px-2 w-full rounded-2xl"
+                  minlength="8"
+                  required />
+                <div class="error text-red-600 font-semibold ml-1"></div>
+              </div>
 
-        <button
-          type="submit"
-          class="bg-gray-900 rounded-xl text-white text-3xl w-80 h-10">
-          Log in
-        </button>
-      </form>
+              <div class="mt-5">
+                <button
+                  class="w-full bg-blue-900 py-3 text-center text-white rounded-2xl">
+                  Login
+                </button>
+              </div>
+              <div class="text-center pt-4">
+                <p>
+                  Not a member? Click
+                  <a href="register.html" class="font-semibold underline"
+                    >here</a
+                  >
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="/src/main.js"></script>
   </body>
 </html>

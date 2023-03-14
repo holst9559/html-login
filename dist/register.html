@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html login</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <div
+      class="min-h-screen py-40"
+      style="background-image: linear-gradient(115deg, #306a79, #dad8d5)">
+      <div class="container mx-auto h-40">
+        <div
+          class="w-5/12 bg-white rounded-xl shadow-lg overflow-hidden mr-auto ml-auto">
+          <div id="form-container" class="w-full py-10 px-12">
+            <h2 class="text-5xl mb-10 text-center">Register</h2>
+            <form id="register" action="#">
+              <div class="input-control mt-5">
+                <input
+                  id="first-name"
+                  type="text"
+                  placeholder="First name"
+                  class="border border-gray-400 py-1 px-2 w-full rounded-2xl" />
+                <div class="error text-red-600 font-semibold ml-1"></div>
+              </div>
+              <div class="input-control mt-5">
+                <input
+                  id="last-name"
+                  type="text"
+                  placeholder="Last name"
+                  class="border border-gray-400 py-1 px-2 w-full rounded-2xl" />
+                <div class="error text-red-600 font-semibold ml-1"></div>
+              </div>
+              <div class="input-control mt-5">
+                <input
+                  id="email"
+                  type="text"
+                  placeholder="Email"
+                  class="border border-gray-400 py-1 px-2 w-full rounded-2xl" />
+                <div class="error text-red-600 font-semibold ml-1"></div>
+              </div>
+              <div class="input-control mt-5">
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Password"
+                  class="border border-gray-400 py-1 px-2 w-full rounded-2xl" />
+                <div class="error text-red-600 font-semibold ml-1"></div>
+              </div>
+              <div
+                id="passwordStr"
+                class="bg-red-500 py-1 px-2 rounded-2xl mt-2 w-full text-center">
+                Weak
+              </div>
+              <div class="input-control mt-5">
+                <input
+                  id="password2"
+                  type="password"
+                  placeholder="Confirm Password"
+                  class="border border-gray-400 py-1 px-2 w-full rounded-2xl" />
+                <div class="error text-red-600 font-semibold ml-1"></div>
+              </div>
+              <div class="input-control mt-5">
+                <button
+                  class="w-full bg-blue-900 py-3 text-center text-white rounded-2xl">
+                  Register Now
+                </button>
+              </div>
+              <div class="text-center pt-4">
+                <p>
+                  Already a member? Click
+                  <a href="index.html" class="font-semibold underline">here</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/src/main.js"></script>
+  </body>
+</html>
